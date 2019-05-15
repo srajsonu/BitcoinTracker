@@ -3,7 +3,6 @@
 //  BitcoinTicker
 //
 //  Created by ARY@N on 23/11/2018.
-//  Copyright © 2016 London App Brewery. All rights reserved.
 //
 
 import UIKit
