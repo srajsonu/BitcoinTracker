@@ -32,17 +32,21 @@
                                     </pickerView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c1V-SU-qjY">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="170"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="txK-OS-RfU">
+                                                <rect key="frame" x="87" y="42" width="240" height="128"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="128" id="cFB-E9-ekw"/>
+                                                    <constraint firstAttribute="width" constant="240" id="lcv-mV-o6W"/>
+                                                </constraints>
+                                            </imageView>
+                                        </subviews>
                                         <constraints>
+                                            <constraint firstItem="txK-OS-RfU" firstAttribute="centerY" secondItem="c1V-SU-qjY" secondAttribute="centerY" constant="21" id="0Ac-kE-pgk"/>
+                                            <constraint firstItem="txK-OS-RfU" firstAttribute="centerX" secondItem="c1V-SU-qjY" secondAttribute="centerX" id="QIP-AH-UFM"/>
                                             <constraint firstAttribute="height" constant="170" id="wlw-GP-n0w"/>
                                         </constraints>
                                     </view>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bitcoin" translatesAutoresizingMaskIntoConstraints="NO" id="txK-OS-RfU">
-                                        <rect key="frame" x="87" y="82" width="240" height="128"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="128" id="cFB-E9-ekw"/>
-                                            <constraint firstAttribute="width" constant="240" id="lcv-mV-o6W"/>
-                                        </constraints>
-                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jg7-Dt-rnc">
                                         <rect key="frame" x="8" y="237" width="398" height="110"/>
                                         <constraints>
@@ -57,8 +61,6 @@
                                 <constraints>
                                     <constraint firstItem="c1V-SU-qjY" firstAttribute="top" secondItem="H4g-qN-MbT" secondAttribute="top" id="FRT-xJ-oZD"/>
                                     <constraint firstItem="c1V-SU-qjY" firstAttribute="leading" secondItem="H4g-qN-MbT" secondAttribute="leading" id="Gjz-QA-PvA"/>
-                                    <constraint firstItem="txK-OS-RfU" firstAttribute="centerX" secondItem="H4g-qN-MbT" secondAttribute="centerX" id="UeL-ye-thw"/>
-                                    <constraint firstItem="txK-OS-RfU" firstAttribute="centerY" secondItem="H4g-qN-MbT" secondAttribute="centerY" constant="-302" id="VAU-ET-tIH"/>
                                     <constraint firstItem="Jg7-Dt-rnc" firstAttribute="top" secondItem="c1V-SU-qjY" secondAttribute="bottom" constant="67" id="cpq-zw-rnu"/>
                                     <constraint firstAttribute="bottom" secondItem="ZGz-pe-AwG" secondAttribute="bottom" constant="42" id="gQW-rN-B2C"/>
                                     <constraint firstAttribute="trailing" secondItem="ZGz-pe-AwG" secondAttribute="trailing" id="han-oI-JPz"/>

@@ -29,6 +29,15 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         return 1
     }
     
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        currencyPicker.delegate = self
+        currencyPicker.dataSource = self
+       
+    }
+
+    //TODO: Place your 3 UIPickerView delegate methods here
+    
     func pickerView(_ pickerView: UIPickerView, numberOfRowsInComponent component: Int) -> Int {
         return currencyArray.count
     }
@@ -42,25 +51,7 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
         currencySelectedArray = currencySymbol[row]
         getBitCoinData(url: finalURL)
     }
-
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        currencyPicker.delegate = self
-        currencyPicker.dataSource = self
-       
-    }
-
-    
-    //TODO: Place your 3 UIPickerView delegate methods here
-    
-    
-    
-
-    
-    
-    
-//    
 //    //MARK: - Networking
 //    /***************************************************************/
 //    
@@ -83,10 +74,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
 
     }
 
-    
-    
-    
-    
     //MARK: - JSON Parsing
     /***************************************************************/
     
@@ -101,12 +88,6 @@ class ViewController: UIViewController, UIPickerViewDataSource, UIPickerViewDele
             
             bitcoinPriceLabel.text = "Price unavailable"
         }
-        
     }
-    
-
-
-
-
 }
 
